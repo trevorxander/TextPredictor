@@ -1,5 +1,5 @@
 # Text Predictor
-Given a partial sentence predicts next possible words.
+Given a partial sentence predicts next possible words. WORK IN PROGRESS.
 <br>
 ## Installation
 

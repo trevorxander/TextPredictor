@@ -2,3 +2,5 @@
 \.idea/
 
 venv/
+
+text_predictor/__pycache__/

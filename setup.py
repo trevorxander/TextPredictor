@@ -18,8 +18,5 @@ setup(
     py_modules=['text_predictor'],
     packages=find_packages(),
     entry_points={
-        'console_scripts': [
-            'textpredict = predictor:predict_text'
-        ]
     }
 )

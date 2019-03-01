@@ -13,13 +13,17 @@ git clone https://github.com/trevorxander/TextPredictor.git
 2 . Install the dependancies.
 
 ```
-pip3 install ./TextPredictor
+pip3 install --user ./TextPredictor
 ```
 <br>
 
-3 . Run the app.
+3 . Run test.
+
 ```
-python3 TextPredictor/predictor.py 
+cd TextPredictor 
+```
+```
+python3 tests/model_eval.py
 ```
 <br>
 

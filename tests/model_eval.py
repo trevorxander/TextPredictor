@@ -28,26 +28,25 @@ def run_test():
                   'Unseen Words Percentage: {unseen}%\n'
                   'Unseen Unique Words Percentage: {unique}%\n'
                   'Perplexity: {perplexity} \n'
-                  .format(ngram = model.ngram, smooth=model.smoothing,
+                  .format(ngram=model.ngram, smooth=model.smoothing,
                           file=test_file,
                           unseen=eval_stats['unseen percent'] * 100,
                           unique=eval_stats['unseen percent unique'] * 100,
                           perplexity=eval_stats['perplexity']))
 
-
     print('\nSENTENCE TEST\n')
     for sentence in test_sentences:
         for model in test_models:
-            log_prob= model.log_prob(sentence)
+            log_prob = model.log_prob(sentence)
             print('Model: n-gram = {ngram}, smoothing = {smooth} \n'
                   'Sentence: {sentence} \n'
                   'Log(base-2) Probability: {log_prob}\n'
                   'Probability: {prob} \n'
                   'Perplexity: {perplexity} \n'
-                  .format(ngram = model.ngram, smooth=model.smoothing,
+                  .format(ngram=model.ngram, smooth=model.smoothing,
                           sentence=sentence,
-                          prob = model.log_to_high_prec(log_prob),
-                          log_prob = log_prob,
+                          prob=model.log_to_high_prec(log_prob),
+                          log_prob=log_prob,
                           perplexity=model.perplexity(sentence)))
 
 
